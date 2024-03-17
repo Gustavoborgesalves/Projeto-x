@@ -1,15 +1,15 @@
 :root {
-    --cor-de-fundo: #808080;
+    --cor-de-fundo: #006400;
     --branco: #FFFFFF;
-    --azul: #1E90FF;
-    --botao-ativo: #7B68EE;
-    --botao-inativo: #1E90FF;
-    --texto-fundo: #1E90FF;
+    --azul: #006400;
+    --botao-ativo: #8B4513;
+    --botao-inativo: #228B22;
+    --texto-fundo: #FFFF;
 }
 
 body {
     background-color: var(--cor-de-fundo);
-    color: aqua;
+    color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -56,10 +56,10 @@ body {
     border-bottom: 4px solid var(--azul);
 }
 
-@media screen (min-width: 768px) {
+@media screen and(min-width: 768px){
     .botoes {
         display: flex;
-    }
+        }
 
     .botao:first-child {
         border-radius: 40px 0 0 0;
