@@ -1,3 +1,5 @@
+@import url(´https://fonts.googleapis.com/css2?family=chakra+petch:wght@400display=swap´);
+
 :root {
     --cor-de-fundo: #006400;
     --branco: #FFFFFF;
@@ -12,6 +14,7 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
+
 
 .conteudo-principal {
     display: flex;
@@ -41,6 +44,12 @@ body {
     justify-content: center;
     padding: 1em;
     font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: var(--botao-ativo);
+    border-right: var(--botao-ativo);
+    border-top: none;
 }
 
 .botao:first-child {
@@ -51,9 +60,39 @@ body {
     display: block;
 }
 
-.ativo {
+.botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--azul);
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--azul);
+    text-transform: uppercase;
+}
+
+contador {
+    font-size: 20px;
+    text-align: center;
 }
 
 @media screen and(min-width: 768px){
